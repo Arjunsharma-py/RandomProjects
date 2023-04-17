@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script type="text/javascript" src="index.js"></script>
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body onload="init()">
+    <div class="navbar">
+      <div class="nav-heading">Rock Paper Scissors</div>
+      <div class="nav-statesBar">
+        <div class="nav-score">
+          Total:
+          <span id="total"></span>
+        </div>
+        <div class="nav-score">
+          Win:
+          <span id="win"></span>
+        </div>
+        <div class="nav-score">
+          Loss:
+          <span id="loss"></span>
+        </div>
+        <div class="nav-score">
+          Draw:
+          <span id="draw"></span>
+        </div>
+      </div>
+    </div>
+    <div class="match">
+      <div class="image-container">
+        <button onclick="usersChoice(0)" class="image-button">
+          <img src="/images/rock.png" alt="rock" class="image-all" />
+        </button>
+        <button onclick="usersChoice(1)" class="image-button">
+          <img src="/images/paper.png" alt="paper" class="image-all" />
+        </button>
+        <button onclick="usersChoice(2)" class="image-button">
+          <img src="/images/scissor.png" alt="scissors" class="image-all" />
+        </button>
+      </div>
+      <div class="result">
+        <div class="match-image-box">
+          <span id="match-image-user">User</span>
+          <span>X</span>
+          <span id="match-image-comp">Computer</span>
+        </div>
+        <div class="result-display"></div>
+      </div>
+      <button id="button-reset" onclick="resetStates()">Reset Score</button>
+    </div>
+    <button id="theme" onclick="changeTheme()">Light</button>
+  </body>
+</html>

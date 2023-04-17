@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  border-radius: 0;
+}
+
+.dark-theme {
+  --bg-color: #ff6a00;
+  --bg-other-color: black;
+  --text-color: white;
+  --text-other-color: white;
+}
+
+.light-theme {
+  --bg-color: black;
+  --bg-other-color: white;
+  --text-color: black;
+  --text-other-color: black;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--bg-other-color);
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  background-color: var(--bg-color);
+}
+
+.nav-heading {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0px 4px;
+}
+
+.nav-statesBar {
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  margin: 20px 20px;
+}
+
+.nav-score {
+  background-color: var(--text-color);
+  color: var(--bg-other-color);
+  border-radius: 20px;
+  padding: 5px;
+  margin: 3px;
+  font-weight: bold;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.image-all {
+  height: 100px;
+  width: 100px;
+  margin: 3px 8px;
+}
+
+.image-button {
+  border: 0px;
+  border-radius: 100px;
+  cursor: pointer;
+  background-color: var(--bg-other-color);
+}
+
+.match {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.result {
+  text-align: center;
+  align-items: center;
+}
+
+.match-image-box {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.match-image-box img {
+  width: 50px;
+}
+
+#match-image-user {
+  padding: 10px;
+}
+
+#match-image-comp {
+  padding: 10px;
+}
+
+.result-display {
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+#button-reset {
+  background-color: #ff6a00;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 14px;
+  border: 0px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin: 20px 0px;
+}
+
+#button-reset:hover {
+  font-size: 16px;
+}
+
+#theme {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  background-color: var(--text-color);
+  color: var(--bg-other-color);
+  padding: 5px 8px;
+  border-radius: 20px;
+  font-weight: 700;
+}
