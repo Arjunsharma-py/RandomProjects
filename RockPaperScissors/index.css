@@ -117,7 +117,7 @@ body {
 }
 
 #button-reset {
-  background-color: #ff6a00;
+  background-color: var(--bg-color);
   color: white;
   font-size: 15px;
   font-weight: bold;
