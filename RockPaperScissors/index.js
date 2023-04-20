@@ -75,9 +75,9 @@ function displayResult(result, choice, x) {
   else if (result == 1) comp.innerHTML = paper;
   else if (result == 2) comp.innerHTML = scissor;
 
-  if (x == 0) res.innerHTML = "You Win";
-  if (x == 1) res.innerHTML = "You Loss";
-  if (x == 2) res.innerHTML = "Match Tie";
+  if (x == 0) res.innerHTML = "Match Tie";
+  if (x == 1) res.innerHTML = "You Win";
+  if (x == 2) res.innerHTML = "You Loss";
 }
 
 function changeTheme() {
