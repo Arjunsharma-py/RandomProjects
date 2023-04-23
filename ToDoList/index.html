@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <nav>
+      <h1>To Do List</h1>
+      <div class="num-todo">
+        <img src="./images/todolistIcon.png" alt="todo:" />
+        <div class="todo"></div>
+      </div>
+    </nav>
+    <section>
+      <h2>Add Items to list</h2>
+      <div class="adding-items-container">
+        <input
+          type="text"
+          placeholder="To Do Name"
+          id="input-items"
+          onkeydown="if(event.keyCode == 13) inputItems();"
+        />
+        <input type="date" id="input-date" />
+        <button class="add-btn" onclick="inputItems()">Add</button>
+      </div>
+      <h2>Works to do</h2>
+      <div class="added-items-container"></div>
+    </section>
+    <script type="text/javascript" src="./scripts/index.js"></script>
+  </body>
+</html>
