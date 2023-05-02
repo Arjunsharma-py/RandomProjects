@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <nav>
+      <h1>Tic Tac Toe</h1>
+    </nav>
+    <section>
+      <img src="./images/Gtid.png" alt="grid" usemap="#gridmap" id="grid" />
+      <map name="gridmap">
+        <area
+          shape="rect"
+          coords="0, 0, 95, 95"
+          alt="button"
+          onclick="clicker(0)"
+        />
+        <area
+          shape="rect"
+          coords="110, 0, 190, 95"
+          alt="button"
+          onclick="clicker(1)"
+        />
+        <area
+          shape="rect"
+          coords="205, 0. 300, 95"
+          alt="button"
+          onclick="clicker(2)"
+        />
+        <area
+          shape="rect"
+          coords="0, 110, 95, 190"
+          alt="button"
+          onclick="clicker(3)"
+        />
+        <area
+          shape="rect"
+          coords="110, 110, 190, 190"
+          alt="button"
+          onclick="clicker(4)"
+        />
+        <area
+          shape="rect"
+          coords="205, 110, 300, 190"
+          alt="button"
+          onclick="clicker(5)"
+        />
+        <area
+          shape="rect"
+          coords="0, 205, 95, 300"
+          alt="button"
+          onclick="clicker(6)"
+        />
+        <area
+          shape="rect"
+          coords="110, 205, 190, 300"
+          alt="button"
+          onclick="clicker(7)"
+        />
+        <area
+          shape="rect"
+          coords="205, 205, 300, 300"
+          alt="button"
+          onclick="clicker(8)"
+        />
+      </map>
+    </section>
+    <div class="all-img"></div>
+    <script type="text/javascript" src="./scripts/index.js"></script>
+  </body>
+</html>
